@@ -7,18 +7,18 @@ orbs:
   welcome: circleci/welcome-orb@0.4.1
 jobs:
   print_hello:
-    docker: 
+    docker:
       - image: circleci/node:13.8.0
-      steps: 
+      steps:
         - run:
             name: Print world
             command: |
               echo "hello" 
 
   print_world:
-    docker: 
+    docker:
       - image: circleci/node:13.8.0
-      steps: 
+      steps:
         - run:
             name: Print world
             command: |
